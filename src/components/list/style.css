@@ -1,0 +1,85 @@
+.container {
+    width: 100%;
+}
+
+.newContainer {
+    display: flex;
+    margin-bottom: 10px;
+    min-height: 50px;
+    align-items: center;
+}
+
+
+.newContainer > textarea {
+    border: 0;
+    border-bottom: 2px solid rgba(10, 190, 250, 1);
+    color: rgba(10, 190, 250, 1);
+    background: rgba(0,0,0,0);
+    flex: 9;
+    justify-content: space-between;
+    outline: 1px solid rgba(10, 190, 250, 0);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 5px;
+    resize: none;
+}
+
+
+.newContainer > button {
+    margin: 0 5px;
+    border-left: 20px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: rgba(0,0,0,0);
+    border: 2px solid rgba(10, 190, 250, .9);
+    color: rgba(10, 190, 250, .9);
+    font-size: 2em;
+}
+
+.newContainer > button:hover {
+    cursor: pointer;
+}
+
+.itemContainer {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "checkbox message deleteButton";
+    grid-template-columns: 1fr 4fr 1fr;
+    margin: 10px auto;
+    padding: 5px 3px;
+    box-shadow: 0 2px 3px rgba(50, 50, 50, .24);
+}
+
+.checkbox {
+    grid-area: checkbox;
+    width: 20px;
+    height: 20px;
+}
+
+.complete{
+    text-decoration: line-through;
+}
+
+.complete > .checkbox {}
+
+.message{
+    grid-area: message;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.deleteButton {
+    grid-area: deleteButton;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonStyle {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
